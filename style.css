@@ -57,7 +57,7 @@ body {
 .search-box {
   background-color: rgba(255, 255, 255, 0.96);
   color: #000;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 2rem;
   border-radius: 12px;
@@ -487,4 +487,99 @@ footer a {
 .awards img {
   margin: 0 1rem;
   height: 40px;
+}
+
+.passenger-box {
+  position: relative;
+  width: 100%;
+}
+
+.passenger-toggle {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Panel gizli başlasın */
+.passenger-panel {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  min-width: 240px;
+  display: none; /* Sadece CSS ile kontrol etmek için başlangıçta gizle */
+}
+
+/* Test amaçlı: geçici olarak görünür yapalım */
+.passenger-box:hover .passenger-panel {
+  display: block;
+}
+
+/* Kabin sekmeleri */
+.class-tabs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.class-tab {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background: #eee;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.class-tab.active {
+  background-color: #003366;
+  color: white;
+  border-color: #003366;
+}
+
+/* Yolcu satırı */
+.passenger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.passenger-label small {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter button {
+  background: #e0e7f8;
+  border: none;
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  color: #003366;
+  cursor: default;
+}
+
+.counter span {
+  min-width: 16px;
+  text-align: center;
 }

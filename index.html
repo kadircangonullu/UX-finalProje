@@ -41,10 +41,47 @@
             <input type="text" placeholder="Nereden" />
             <input type="text" placeholder="Nereye" />
             <input type="date" />
-            <select>
-              <option>1 Yolcu, Ekonomi</option>
-              <option>2 Yolcu, Business</option>
-            </select>
+            <div class="passenger-box">
+              <button class="passenger-toggle">
+                1 Yolcu • Economy Class ▼
+              </button>
+              <div class="passenger-panel">
+                <div class="class-tabs">
+                  <label class="class-tab active">Economy Class</label>
+                  <label class="class-tab">Business Class</label>
+                </div>
+                <div class="passenger-row">
+                  <div class="passenger-label">
+                    <strong>Yetişkin</strong><br /><small>12 +</small>
+                  </div>
+                  <div class="counter">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </div>
+                <div class="passenger-row">
+                  <div class="passenger-label">
+                    <strong>Çocuk</strong><br /><small>2 – 12</small>
+                  </div>
+                  <div class="counter">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                  </div>
+                </div>
+                <div class="passenger-row">
+                  <div class="passenger-label">
+                    <strong>Bebek</strong><br /><small>2 yaş altı</small>
+                  </div>
+                  <div class="counter">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <button type="submit">Uçuş Ara</button>
           </div>
         </form>
