@@ -7,8 +7,100 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f4f6f9;
+  background: linear-gradient(120deg, #aee2ff 0%, #f7fbff 100%);
   color: #333;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animasyonlu bulutlar ve uçaklar için arka plan katmanı */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.7;
+  animation: cloud-move 60s linear infinite;
+}
+.cloud.c1 {
+  width: 120px;
+  height: 60px;
+  top: 10%;
+  left: -150px;
+  animation-delay: 0s;
+}
+.cloud.c2 {
+  width: 90px;
+  height: 45px;
+  top: 30%;
+  left: -100px;
+  animation-delay: 10s;
+}
+.cloud.c3 {
+  width: 150px;
+  height: 70px;
+  top: 60%;
+  left: -200px;
+  animation-delay: 20s;
+}
+.cloud.c4 {
+  width: 70px;
+  height: 35px;
+  top: 80%;
+  left: -80px;
+  animation-delay: 30s;
+}
+
+@keyframes cloud-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+.plane {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 40%;
+  left: -100px;
+  z-index: 1;
+  opacity: 0.85;
+  animation: plane-fly 30s linear infinite;
+}
+@keyframes plane-fly {
+  0% {
+    transform: translateY(0) scale(1) rotate(-10deg);
+    left: -100px;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(-10deg);
+    left: 110vw;
+  }
+}
+
+/* İçerik üstte kalsın diye z-index ayarı */
+body > *:not(.animated-bg) {
+  position: relative;
+  z-index: 2;
 }
 
 /* Topbar */
@@ -136,6 +228,8 @@ body {
   gap: 1.5rem;
   background: #f8fbff;
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .icon-box {
@@ -179,12 +273,13 @@ body {
 .alert-box {
   background-color: #fff;
   border-left: 6px solid #d80027;
-  margin: 2rem;
+  margin: 2rem auto;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   animation: fadeIn 0.6s ease-out;
   transition: 0.3s ease all;
+  max-width: 1200px;
 }
 
 .alert-content {
@@ -256,27 +351,28 @@ body {
 
 /* Başarı */
 .alert-success {
-  border-left-color: #28a745;
+  border-left-color: #107c10;
 }
 .alert-success .alert-icon,
 .alert-success h4 {
-  color: #28a745;
+  color: #107c10;
 }
 
 /* Hata */
 .alert-error {
-  border-left-color: #e60000;
+  border-left-color: #d13438;
 }
 .alert-error .alert-icon,
 .alert-error h4 {
-  color: #e60000;
+  color: #d13438;
 }
 
-/* Flight Cards */
 .flights-section {
   padding: 2rem;
   background: #f9f9f9;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .flights-section h3 {
@@ -345,8 +441,10 @@ footer a {
 }
 
 .opportunities {
-  padding: 2rem;
+  padding: 1.2rem 0 1.5rem 0; /* üst-alt padding azaltıldı */
   background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .opportunities h2 {
@@ -358,9 +456,9 @@ footer a {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
+  gap: 0.5rem; /* gap azaltıldı */
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* margin azaltıldı */
 }
 
 .filters select,
@@ -387,7 +485,7 @@ footer a {
 .flight-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem; /* gap azaltıldı */
   justify-content: center;
 }
 
@@ -476,34 +574,46 @@ footer a {
   background: #d80027;
   color: white;
   border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 5px;
-  margin-top: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.card-content button:hover {
+  background-color: #a8001d;
 }
 
 .more-btn {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.2rem; /* margin azaltıldı */
 }
 
 .more-btn button {
-  border: 1px solid #d80027;
-  background: none;
-  color: #d80027;
-  padding: 0.6rem 1.4rem;
-  border-radius: 25px;
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.more-btn button:hover {
+  background-color: #002244;
 }
 
 .promo-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.2rem; /* gap azaltıldı */
   background: #f9f9f9;
-  padding: 2rem;
+  padding: 1.2rem 0 1.5rem 0; /* üst-alt padding azaltıldı */
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .promo-box {
@@ -516,6 +626,7 @@ footer a {
   color: #333;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   padding: 0 0 1rem;
+  margin-bottom: 0; /* alt boşluk kaldırıldı */
 }
 
 .promo-box img {
@@ -540,6 +651,8 @@ footer a {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .award-item {
@@ -1243,4 +1356,40 @@ header .step {
 
 .search-again:hover {
   background-color: #ccc;
+}
+
+.opportunities .flight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.opportunities .flight-card {
+  width: 270px;
+  min-height: 340px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .opportunities .flight-card {
+    width: 48%;
+    min-width: 220px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .opportunities .flight-card {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 1rem;
+  }
 }
