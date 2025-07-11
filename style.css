@@ -1,0 +1,490 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #0f1c2e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.lang-switch {
+  background: #fff;
+  color: #0f1c2e;
+  border: none;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url("images/hero.jpg") center/cover no-repeat;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.search-box {
+  background-color: rgba(255, 255, 255, 0.96);
+  color: #000;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.search-box span {
+  font-size: 1.8rem;
+  color: #003366;
+}
+
+.tab-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  background: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #d80027;
+  color: white;
+}
+
+.trip-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.flight-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.flight-form input,
+.flight-form select {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.flight-form button {
+  background: #d80027;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.flight-form button:hover {
+  background-color: #a8001d;
+}
+
+/* Icons Menu */
+.icons-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #f8fbff;
+  padding: 2rem;
+}
+
+.icon-box {
+  background-color: white;
+  width: 150px;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.5rem;
+  background-color: #e9f1fb;
+  color: #0f1c2e;
+  font-size: 1.8rem;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.icon-box h4 {
+  font-size: 0.95rem;
+  color: #0f1c2e;
+  margin: 0.5rem 0 0;
+}
+
+.icon-item {
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+.alert-box {
+  background-color: #fff;
+  border-left: 6px solid #d80027;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.6s ease-out;
+  transition: 0.3s ease all;
+}
+
+.alert-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.alert-icon {
+  font-size: 2rem;
+  color: #d80027;
+  flex-shrink: 0;
+}
+
+.alert-text h4 {
+  margin: 0;
+  color: #d80027;
+  font-size: 1.1rem;
+}
+
+.alert-text p {
+  margin-top: 0.3rem;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.alert-text a {
+  color: #d80027;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.alert-box.closable {
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #999;
+  cursor: default;
+}
+
+.close-icon:hover {
+  color: #d80027;
+}
+
+/* Uyarı (Varsayılan) */
+.alert-warning {
+  border-left-color: #d80027;
+}
+.alert-warning .alert-icon,
+.alert-warning h4 {
+  color: #d80027;
+}
+
+/* Bilgilendirme */
+.alert-info {
+  border-left-color: #0078d7;
+}
+.alert-info .alert-icon,
+.alert-info h4 {
+  color: #0078d7;
+}
+
+/* Başarı */
+.alert-success {
+  border-left-color: #28a745;
+}
+.alert-success .alert-icon,
+.alert-success h4 {
+  color: #28a745;
+}
+
+/* Hata */
+.alert-error {
+  border-left-color: #e60000;
+}
+.alert-error .alert-icon,
+.alert-error h4 {
+  color: #e60000;
+}
+
+/* Flight Cards */
+.flights-section {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.flights-section h3 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.flight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.flight-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  width: 220px;
+}
+
+.flight-card h4 {
+  color: #d80027;
+}
+
+/* Footer */
+footer {
+  background-color: #0f1c2e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ddd;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flight-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .icons-menu {
+    flex-direction: column;
+  }
+
+  .tab-menu {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.opportunities {
+  padding: 2rem;
+  background: #fff;
+}
+
+.opportunities h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.filters select,
+.tag {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.tag.active {
+  background: #d80027;
+  color: white;
+}
+
+.tag.clear {
+  border: none;
+  color: red;
+  background: none;
+  font-weight: bold;
+}
+
+.flight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.flight-card {
+  width: 260px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #d80027;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.card-content button {
+  background: #d80027;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.more-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.more-btn button {
+  border: 1px solid #d80027;
+  background: none;
+  color: #d80027;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.promo-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #f9f9f9;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.promo-box {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 0 0 1rem;
+}
+
+.promo-box img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.promo-box p {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+.awards {
+  background: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.awards img {
+  margin: 0 1rem;
+  height: 40px;
+}

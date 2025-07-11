@@ -1,0 +1,50 @@
+<!-- book.html -->
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWings | Uçuş Ara</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">✈️ SkyWings</div>
+      <nav class="topnav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="#">Uçuş Noktaları</a>
+        <a href="#">Yardım</a>
+        <button class="lang-switch">EN</button>
+      </nav>
+    </header>
+
+    <section class="hero booking-hero">
+      <div class="search-box">
+        <h2>Uçuşunuzu Arayın</h2>
+        <form class="flight-form">
+          <div class="trip-types">
+            <label
+              ><input type="radio" name="trip" checked /> Gidiş - Dönüş</label
+            >
+            <label><input type="radio" name="trip" /> Tek Yön</label>
+          </div>
+          <div class="form-grid">
+            <input type="text" placeholder="Nereden" />
+            <input type="text" placeholder="Nereye" />
+            <input type="date" />
+            <select>
+              <option>1 Yolcu, Ekonomi</option>
+              <option>2 Yolcu, Business</option>
+            </select>
+            <button type="submit">Uçuş Ara</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 SkyWings Havayolları | <a href="#">Gizlilik</a> |
+      <a href="#">İletişim</a>
+    </footer>
+  </body>
+</html>
