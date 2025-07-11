@@ -17,7 +17,7 @@
   <body class="booking-page">
     <header class="booking-steps">
       <div class="logo-area">
-        <img src="images/logo.png" alt="SkyWings" />
+        <div class="logo">✈️ SkyWings</div>
       </div>
       <div class="step active"><span class="icon">✈️</span> Uçuş seçimi</div>
       <div class="step"><span class="icon">👤</span> Yolcu bilgileri</div>
@@ -118,39 +118,103 @@
     </section>
 
     <div class="flight-list">
+      <!-- Flight Card 1 -->
       <div class="flight-card">
         <div class="flight-info">
-          <div class="flight-time">
-            <strong>02:20</strong> <br />COV<br /><small>Çukurova</small>
+          <div class="time-location">
+            <div class="time">02:20</div>
+            <div class="location">COV<br />Çukurova</div>
           </div>
-          <div class="flight-line">
-            <div class="line-text">Direkt</div>
-            <div class="line-graphic">
-              <span></span>
-              <span class="plane-icon">✈</span>
-              <span></span>
-            </div>
-            <div class="line-meta">
-              <small>Toplam süre: 1s 50d</small><br />
-              <small>Uçak tipi: Airbus A321-231 - Dar gövde</small>
-            </div>
+          <div class="flight-path">
+            <div class="type">Direkt</div>
+            <div class="plane-icon">✈️</div>
+            <div class="duration">Toplam süre: 1s 50d</div>
           </div>
-          <div class="flight-time">
-            <strong>04:10</strong> <br />IST<br /><small>İstanbul</small>
+          <div class="time-location">
+            <div class="time">04:10</div>
+            <div class="location">IST<br />İstanbul</div>
           </div>
-          <div class="flight-details-btn">Seyahat detayları</div>
         </div>
-
-        <div class="price-options">
+        <div class="flight-details">
+          <div class="aircraft">Uçak tipi: Airbus A321-231 – Dar gövde</div>
+        </div>
+        <div class="flight-prices">
           <div class="price economy">
-            <div class="label">Economy</div>
-            <div class="price-value">TRY 3.284<sup>,82</sup></div>
+            <span>Economy</span>
+            <strong>TRY 3.284<sup>,82</sup></strong>
             <input type="radio" name="flight1" />
           </div>
           <div class="price business">
-            <div class="label">Business</div>
-            <div class="price-value">TRY 10.205<sup>,13</sup></div>
+            <span>Business</span>
+            <strong>TRY 10.205<sup>,13</sup></strong>
             <input type="radio" name="flight1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Flight Card 2 -->
+      <div class="flight-card">
+        <div class="flight-info">
+          <div class="time-location">
+            <div class="time">08:35</div>
+            <div class="location">COV<br />Çukurova</div>
+          </div>
+          <div class="flight-path">
+            <div class="type">Direkt</div>
+            <div class="plane-icon">✈️</div>
+            <div class="duration">Toplam süre: 1s 50d</div>
+          </div>
+          <div class="time-location">
+            <div class="time">10:25</div>
+            <div class="location">IST<br />İstanbul</div>
+          </div>
+        </div>
+        <div class="flight-details">
+          <div class="aircraft">Uçak tipi: Boeing B737-800 – Dar gövde</div>
+        </div>
+        <div class="flight-prices">
+          <div class="price economy">
+            <span>Economy</span>
+            <strong>TRY 3.284<sup>,82</sup></strong>
+            <input type="radio" name="flight2" />
+          </div>
+          <div class="price business">
+            <span>Business</span>
+            <strong>TRY 10.205<sup>,13</sup></strong>
+            <input type="radio" name="flight2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Flight Card 3 (Business Dolu) -->
+      <div class="flight-card">
+        <div class="flight-info">
+          <div class="time-location">
+            <div class="time">14:35</div>
+            <div class="location">COV<br />Çukurova</div>
+          </div>
+          <div class="flight-path">
+            <div class="type">Direkt</div>
+            <div class="plane-icon">✈️</div>
+            <div class="duration">Toplam süre: 1s 45d</div>
+          </div>
+          <div class="time-location">
+            <div class="time">16:20</div>
+            <div class="location">IST<br />İstanbul</div>
+          </div>
+        </div>
+        <div class="flight-details">
+          <div class="aircraft">Uçak tipi: Airbus A330-300 – Geniş gövde</div>
+        </div>
+        <div class="flight-prices">
+          <div class="price economy">
+            <span>Economy</span>
+            <strong>TRY 3.284<sup>,82</sup></strong>
+            <input type="radio" name="flight3" />
+          </div>
+          <div class="price business full">
+            <span>Business</span>
+            <strong>Dolu</strong>
           </div>
         </div>
       </div>
