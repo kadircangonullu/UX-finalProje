@@ -1,46 +1,160 @@
-<!-- book.html -->
 <!DOCTYPE html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyWings | Uçuş Ara</title>
+    <title>SkyWings | Bilet Al</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f6f7f9;
+        color: #222;
+      }
+    </style>
   </head>
-  <body>
-    <header class="topbar">
-      <div class="logo">✈️ SkyWings</div>
-      <nav class="topnav">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="#">Uçuş Noktaları</a>
-        <a href="#">Yardım</a>
-        <button class="lang-switch">EN</button>
-      </nav>
+  <body class="booking-page">
+    <header class="booking-steps">
+      <div class="logo-area">
+        <img src="images/logo.png" alt="SkyWings" />
+      </div>
+      <div class="step active"><span class="icon">✈️</span> Uçuş seçimi</div>
+      <div class="step"><span class="icon">👤</span> Yolcu bilgileri</div>
+      <div class="step"><span class="icon">🎟️</span> Ek hizmetler</div>
+      <div class="step"><span class="icon">💳</span> Ödeme</div>
     </header>
 
-    <section class="hero booking-hero">
-      <div class="search-box">
-        <h2>Uçuşunuzu Arayın</h2>
-        <form class="flight-form">
-          <div class="trip-types">
-            <label
-              ><input type="radio" name="trip" checked /> Gidiş - Dönüş</label
-            >
-            <label><input type="radio" name="trip" /> Tek Yön</label>
-          </div>
-          <div class="form-grid">
-            <input type="text" placeholder="Nereden" />
-            <input type="text" placeholder="Nereye" />
-            <input type="date" />
-            <select>
-              <option>1 Yolcu, Ekonomi</option>
-              <option>2 Yolcu, Business</option>
-            </select>
-            <button type="submit">Uçuş Ara</button>
-          </div>
-        </form>
+    <div class="flight-summary">
+      <div class="summary-info">
+        <span><strong>Nereden:</strong> Çukurova</span>
+        <span><strong>Nereye:</strong> İstanbul</span>
+        <span><strong>Tarih:</strong> 18 Ağustos</span>
+        <span><strong>Yolcu:</strong> 1 Yolcu (Eco)</span>
+      </div>
+      <button class="search-again">Yeniden ara</button>
+    </div>
+
+    <div class="date-selector-wrapper">
+      <button class="nav-btn prev">&lt;</button>
+      <!-- SOLDA -->
+
+      <div class="date-list">
+        <div class="date-card">
+          <strong>09</strong>
+          <span>Cumartesi<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+        <div class="date-card">
+          <strong>10</strong>
+          <span>Pazar<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+        <div class="date-card">
+          <strong>11</strong>
+          <span>Pazartesi<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+        <div class="date-card selected">
+          <strong>12</strong>
+          <span>Salı<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+        <div class="date-card">
+          <strong>13</strong>
+          <span>Çarşamba<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+        <div class="date-card">
+          <strong>14</strong>
+          <span>Perşembe<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+        <div class="date-card">
+          <strong>15</strong>
+          <span>Cuma<br />Ağustos</span>
+          <div class="price">TRY 3.285</div>
+        </div>
+      </div>
+
+      <button class="nav-btn next">&gt;</button>
+      <!-- SAĞDA -->
+    </div>
+
+    <section class="filter-sort-bar">
+      <div class="filters-left">
+        <select>
+          <option>Direkt/Aktarmalı</option>
+        </select>
+        <select>
+          <option>Havayolu firması</option>
+        </select>
+      </div>
+
+      <div class="sort-right">
+        <span class="sort-label">Sıralama kriteri</span>
+        <div class="sort-buttons">
+          <button class="active">Önerilen</button>
+          <button>Ücrete göre artan</button>
+          <button>Uçuş süresi</button>
+          <select class="extra-sorting">
+            <option>+3</option>
+          </select>
+        </div>
       </div>
     </section>
+
+    <section class="info-box">
+      <div class="info-icon">🕘</div>
+      <p>
+        İnternet sitemizden veya mobil uygulamamızdan satın aldığınız biletler
+        için <strong>24 saat içinde kesintisiz iade</strong> alabilirsiniz.
+        Kesintisiz iade alabilmeniz için uçuşlarınızın kalkış tarihine en az
+        <strong>7 gün</strong> olması gerekmektedir. Satın aldığınız ek
+        hizmetler iade edilmemektedir. Detaylı bilgi için
+        <a href="#">24 saat içinde ücretsiz bilet iptali</a> sayfamızı ziyaret
+        edebilirsiniz.
+      </p>
+    </section>
+
+    <div class="flight-list">
+      <div class="flight-card">
+        <div class="flight-info">
+          <div class="flight-time">
+            <strong>02:20</strong> <br />COV<br /><small>Çukurova</small>
+          </div>
+          <div class="flight-line">
+            <div class="line-text">Direkt</div>
+            <div class="line-graphic">
+              <span></span>
+              <span class="plane-icon">✈</span>
+              <span></span>
+            </div>
+            <div class="line-meta">
+              <small>Toplam süre: 1s 50d</small><br />
+              <small>Uçak tipi: Airbus A321-231 - Dar gövde</small>
+            </div>
+          </div>
+          <div class="flight-time">
+            <strong>04:10</strong> <br />IST<br /><small>İstanbul</small>
+          </div>
+          <div class="flight-details-btn">Seyahat detayları</div>
+        </div>
+
+        <div class="price-options">
+          <div class="price economy">
+            <div class="label">Economy</div>
+            <div class="price-value">TRY 3.284<sup>,82</sup></div>
+            <input type="radio" name="flight1" />
+          </div>
+          <div class="price business">
+            <div class="label">Business</div>
+            <div class="price-value">TRY 10.205<sup>,13</sup></div>
+            <input type="radio" name="flight1" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
       © 2025 SkyWings Havayolları | <a href="#">Gizlilik</a> |
