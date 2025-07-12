@@ -1454,3 +1454,248 @@ header .step {
   box-shadow: 0 4px 16px rgba(216, 0, 39, 0.18);
   transform: translateY(-2px) scale(1.03);
 }
+
+/* --- Yolcu Bilgileri (passenger.html) --- */
+.passenger-container {
+  max-width: 480px;
+  margin: 40px auto 32px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 80, 180, 0.08);
+  padding: 32px 28px 24px 28px;
+}
+.passenger-title {
+  text-align: center;
+  color: #003366;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.passenger-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #003366;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.passenger-form input,
+.passenger-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #b3d8f7;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  background: #f7fbff;
+  color: #222;
+  transition: border 0.2s;
+}
+.passenger-form input:focus,
+.passenger-form select:focus {
+  border: 1.5px solid #d80027;
+  outline: none;
+}
+.passenger-form .form-row {
+  display: flex;
+  gap: 12px;
+}
+.passenger-form .form-row > div {
+  flex: 1;
+}
+.passenger-form .gender-group {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.passenger-form .gender-group label {
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #333;
+  font-size: 0.98rem;
+}
+.passenger-form .gender-group input[type="radio"] {
+  margin-right: 6px;
+}
+.passenger-summary {
+  background: linear-gradient(90deg, #e3f0ff 0%, #f7fbff 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 80, 180, 0.07);
+  padding: 16px 18px;
+  margin-bottom: 28px;
+  color: #003366;
+  font-size: 1.08rem;
+  font-weight: 500;
+  border: 1.5px solid #b3d8f7;
+}
+.passenger-form .card-continue-btn {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+/* --- Ödeme (payment.html) --- */
+.payment-container {
+  max-width: 420px;
+  margin: 40px auto 32px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 80, 180, 0.08);
+  padding: 32px 28px 24px 28px;
+}
+.payment-title {
+  text-align: center;
+  color: #003366;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.payment-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #003366;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.payment-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #b3d8f7;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  background: #f7fbff;
+  color: #222;
+  transition: border 0.2s;
+}
+.payment-form input:focus {
+  border: 1.5px solid #d80027;
+  outline: none;
+}
+.payment-form .form-row {
+  display: flex;
+  gap: 12px;
+}
+.payment-form .form-row > div {
+  flex: 1;
+}
+.payment-summary {
+  background: linear-gradient(90deg, #e3f0ff 0%, #f7fbff 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 80, 180, 0.07);
+  padding: 16px 18px;
+  margin-bottom: 28px;
+  color: #003366;
+  font-size: 1.08rem;
+  font-weight: 500;
+  border: 1.5px solid #b3d8f7;
+}
+.payment-form .card-continue-btn {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+/* --- Başarı (success.html) --- */
+.success-container {
+  max-width: 420px;
+  margin: 60px auto 32px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 80, 180, 0.08);
+  padding: 40px 28px 32px 28px;
+  text-align: center;
+}
+.success-icon {
+  font-size: 3.5rem;
+  color: #4fc3f7;
+  margin-bottom: 18px;
+  display: inline-block;
+  background: linear-gradient(90deg, #e3f0ff 0%, #f7fbff 100%);
+  border-radius: 50%;
+  padding: 18px 22px;
+  box-shadow: 0 2px 8px rgba(0, 80, 180, 0.07);
+}
+.success-title {
+  color: #003366;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.success-desc {
+  color: #333;
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+.success-btn {
+  background: linear-gradient(90deg, #d80027 0%, #ff5e62 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 22px;
+  font-size: 1.08rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(216, 0, 39, 0.1);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+.success-btn:hover {
+  background: linear-gradient(90deg, #a8001d 0%, #ff5e62 100%);
+  box-shadow: 0 4px 16px rgba(216, 0, 39, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Ek Hizmetler (add-services.html) */
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+@media (max-width: 600px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #f7fbff 0%, #e3f0ff 100%);
+  border: 1.5px solid #b3d8f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 80, 180, 0.06);
+  padding: 18px 10px 14px 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+  min-height: 120px;
+  position: relative;
+  font-size: 1rem;
+  gap: 4px;
+}
+.service-box:hover,
+.service-box:focus-within {
+  box-shadow: 0 4px 16px rgba(0, 80, 180, 0.13);
+  border: 1.5px solid #4fc3f7;
+  background: linear-gradient(90deg, #e3f0ff 0%, #f7fbff 100%);
+}
+.service-box input[type="checkbox"] {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  accent-color: #d80027;
+  width: 18px;
+  height: 18px;
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+.service-title {
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 2px;
+}
+.service-desc {
+  color: #555;
+  font-size: 0.97rem;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWings | Ek Hizmetler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="booking-steps">
+      <div class="logo-area">
+        <div class="logo">✈️ SkyWings</div>
+      </div>
+      <div class="step"><span class="icon">✈️</span> Uçuş seçimi</div>
+      <div class="step"><span class="icon">👤</span> Yolcu bilgileri</div>
+      <div class="step active"><span class="icon">🎟️</span> Ek hizmetler</div>
+      <div class="step"><span class="icon">💳</span> Ödeme</div>
+    </header>
+    <div class="passenger-container">
+      <div class="passenger-title">Ek Hizmetler</div>
+      <form class="passenger-form" action="payment.html" method="get">
+        <div class="services-list">
+          <label class="service-box">
+            <input type="checkbox" name="extra_baggage" value="1" />
+            <span class="service-icon">💼</span>
+            <span class="service-title">Ekstra Bagaj</span>
+            <span class="service-desc">+20 kg bagaj hakkı</span>
+          </label>
+          <label class="service-box">
+            <input type="checkbox" name="seat_select" value="1" />
+            <span class="service-icon">🪑</span>
+            <span class="service-title">Koltuk Seçimi</span>
+            <span class="service-desc">İstediğiniz koltukta uçun</span>
+          </label>
+          <label class="service-box">
+            <input type="checkbox" name="meal" value="1" />
+            <span class="service-icon">🍽️</span>
+            <span class="service-title">Yemek</span>
+            <span class="service-desc">Sıcak yemek ve içecek</span>
+          </label>
+          <label class="service-box">
+            <input type="checkbox" name="insurance" value="1" />
+            <span class="service-icon">🛡️</span>
+            <span class="service-title">Seyahat Sigortası</span>
+            <span class="service-desc">Ekstra güvence</span>
+          </label>
+        </div>
+        <button type="submit" class="card-continue-btn">Devam Et</button>
+      </form>
+    </div>
+  </body>
+</html>
