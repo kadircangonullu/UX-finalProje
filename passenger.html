@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWings | Yolcu Bilgileri</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .passenger-container {
+        max-width: 480px;
+        margin: 40px auto 32px auto;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0, 80, 180, 0.08);
+        padding: 32px 28px 24px 28px;
+      }
+      .passenger-title {
+        text-align: center;
+        color: #003366;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 18px;
+      }
+      .passenger-form label {
+        display: block;
+        margin-bottom: 6px;
+        color: #003366;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      .passenger-form input,
+      .passenger-form select {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1.5px solid #b3d8f7;
+        margin-bottom: 18px;
+        font-size: 1rem;
+        background: #f7fbff;
+        color: #222;
+        transition: border 0.2s;
+      }
+      .passenger-form input:focus,
+      .passenger-form select:focus {
+        border: 1.5px solid #d80027;
+        outline: none;
+      }
+      .passenger-form .form-row {
+        display: flex;
+        gap: 12px;
+      }
+      .passenger-form .form-row > div {
+        flex: 1;
+      }
+      .passenger-form .gender-group {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 18px;
+      }
+      .passenger-form .gender-group label {
+        margin-bottom: 0;
+        font-weight: 400;
+        color: #333;
+        font-size: 0.98rem;
+      }
+      .passenger-form .gender-group input[type="radio"] {
+        margin-right: 6px;
+      }
+      .passenger-summary {
+        background: linear-gradient(90deg, #e3f0ff 0%, #f7fbff 100%);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 80, 180, 0.07);
+        padding: 16px 18px;
+        margin-bottom: 28px;
+        color: #003366;
+        font-size: 1.08rem;
+        font-weight: 500;
+        border: 1.5px solid #b3d8f7;
+      }
+      .passenger-form .card-continue-btn {
+        width: 100%;
+        margin: 10px 0 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="passenger-container">
+      <div class="passenger-title">Yolcu Bilgileri</div>
+      <div class="passenger-summary">
+        <span><strong>Uçuş:</strong> Çukurova → İstanbul</span><br />
+        <span><strong>Tarih:</strong> 18 Ağustos</span><br />
+        <span><strong>Yolcu:</strong> 1 Yetişkin</span>
+      </div>
+      <form
+        class="passenger-form"
+        action="payment.html"
+        method="get"
+        autocomplete="on"
+      >
+        <label for="fullname">Ad Soyad</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          required
+          placeholder="Adınız ve Soyadınız"
+        />
+
+        <div class="form-row">
+          <div>
+            <label for="email">E-posta</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="ornek@mail.com"
+            />
+          </div>
+          <div>
+            <label for="phone">Telefon</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="5xx xxx xx xx"
+              pattern="[0-9]{10}"
+              maxlength="10"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="birthdate">Doğum Tarihi</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+          <div>
+            <label for="nationality">Uyruk</label>
+            <select id="nationality" name="nationality" required>
+              <option value="">Seçiniz</option>
+              <option value="TC">Türkiye</option>
+              <option value="DE">Almanya</option>
+              <option value="FR">Fransa</option>
+              <option value="GB">İngiltere</option>
+              <option value="US">ABD</option>
+              <option value="RU">Rusya</option>
+              <option value="AZ">Azerbaycan</option>
+              <option value="other">Diğer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="idno">Kimlik/Pasaport No</label>
+            <input
+              type="text"
+              id="idno"
+              name="idno"
+              required
+              placeholder="TCKN veya Pasaport No"
+              maxlength="11"
+              pattern="[0-9]{11}"
+            />
+          </div>
+          <div>
+            <label>Cinsiyet</label>
+            <div class="gender-group">
+              <label
+                ><input type="radio" name="gender" value="male" required />
+                Erkek</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" required />
+                Kadın</label
+              >
+              <label
+                ><input type="radio" name="gender" value="other" required />
+                Diğer</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="card-continue-btn">Devam Et</button>
+      </form>
+    </div>
+  </body>
+</html>

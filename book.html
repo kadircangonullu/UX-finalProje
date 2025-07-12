@@ -117,108 +117,136 @@
       </p>
     </section>
 
-    <div class="flight-list">
-      <!-- Flight Card 1 -->
-      <div class="flight-card">
-        <div class="flight-info">
-          <div class="time-location">
-            <div class="time">02:20</div>
-            <div class="location">COV<br />Çukurova</div>
+    <!-- FLIGHT LIST BAŞLANGIÇ -->
+    <form action="passenger.html" method="get">
+      <div class="flight-list">
+        <!-- Flight Card 1 -->
+        <div class="flight-card">
+          <div class="flight-info">
+            <div class="time-location">
+              <div class="time">02:20</div>
+              <div class="location">COV<br />Çukurova</div>
+            </div>
+            <div class="flight-path">
+              <div class="type">Direkt</div>
+              <div class="plane-icon">✈️</div>
+              <div class="duration">Toplam süre: 1s 50d</div>
+            </div>
+            <div class="time-location">
+              <div class="time">04:10</div>
+              <div class="location">IST<br />İstanbul</div>
+            </div>
           </div>
-          <div class="flight-path">
-            <div class="type">Direkt</div>
-            <div class="plane-icon">✈️</div>
-            <div class="duration">Toplam süre: 1s 50d</div>
+          <div class="flight-details">
+            <div class="aircraft">Uçak tipi: Airbus A321-231 – Dar gövde</div>
           </div>
-          <div class="time-location">
-            <div class="time">04:10</div>
-            <div class="location">IST<br />İstanbul</div>
+          <div class="flight-prices">
+            <div class="price economy">
+              <span>Economy</span>
+              <strong>TRY 3.284<sup>,82</sup></strong>
+              <input type="radio" name="flight" value="flight1" required />
+            </div>
+            <div class="price business">
+              <span>Business</span>
+              <strong>TRY 10.205<sup>,13</sup></strong>
+              <input type="radio" name="flight" value="flight1-business" />
+            </div>
           </div>
+          <button
+            type="submit"
+            name="flight"
+            value="flight1"
+            class="card-continue-btn"
+          >
+            Devam Et
+          </button>
         </div>
-        <div class="flight-details">
-          <div class="aircraft">Uçak tipi: Airbus A321-231 – Dar gövde</div>
-        </div>
-        <div class="flight-prices">
-          <div class="price economy">
-            <span>Economy</span>
-            <strong>TRY 3.284<sup>,82</sup></strong>
-            <input type="radio" name="flight1" />
-          </div>
-          <div class="price business">
-            <span>Business</span>
-            <strong>TRY 10.205<sup>,13</sup></strong>
-            <input type="radio" name="flight1" />
-          </div>
-        </div>
-      </div>
 
-      <!-- Flight Card 2 -->
-      <div class="flight-card">
-        <div class="flight-info">
-          <div class="time-location">
-            <div class="time">08:35</div>
-            <div class="location">COV<br />Çukurova</div>
+        <!-- Flight Card 2 -->
+        <div class="flight-card">
+          <div class="flight-info">
+            <div class="time-location">
+              <div class="time">08:35</div>
+              <div class="location">COV<br />Çukurova</div>
+            </div>
+            <div class="flight-path">
+              <div class="type">Direkt</div>
+              <div class="plane-icon">✈️</div>
+              <div class="duration">Toplam süre: 1s 50d</div>
+            </div>
+            <div class="time-location">
+              <div class="time">10:25</div>
+              <div class="location">IST<br />İstanbul</div>
+            </div>
           </div>
-          <div class="flight-path">
-            <div class="type">Direkt</div>
-            <div class="plane-icon">✈️</div>
-            <div class="duration">Toplam süre: 1s 50d</div>
+          <div class="flight-details">
+            <div class="aircraft">Uçak tipi: Boeing B737-800 – Dar gövde</div>
           </div>
-          <div class="time-location">
-            <div class="time">10:25</div>
-            <div class="location">IST<br />İstanbul</div>
+          <div class="flight-prices">
+            <div class="price economy">
+              <span>Economy</span>
+              <strong>TRY 3.284<sup>,82</sup></strong>
+              <input type="radio" name="flight" value="flight2" required />
+            </div>
+            <div class="price business">
+              <span>Business</span>
+              <strong>TRY 10.205<sup>,13</sup></strong>
+              <input type="radio" name="flight" value="flight2-business" />
+            </div>
           </div>
+          <button
+            type="submit"
+            name="flight"
+            value="flight2"
+            class="card-continue-btn"
+          >
+            Devam Et
+          </button>
         </div>
-        <div class="flight-details">
-          <div class="aircraft">Uçak tipi: Boeing B737-800 – Dar gövde</div>
-        </div>
-        <div class="flight-prices">
-          <div class="price economy">
-            <span>Economy</span>
-            <strong>TRY 3.284<sup>,82</sup></strong>
-            <input type="radio" name="flight2" />
-          </div>
-          <div class="price business">
-            <span>Business</span>
-            <strong>TRY 10.205<sup>,13</sup></strong>
-            <input type="radio" name="flight2" />
-          </div>
-        </div>
-      </div>
 
-      <!-- Flight Card 3 (Business Dolu) -->
-      <div class="flight-card">
-        <div class="flight-info">
-          <div class="time-location">
-            <div class="time">14:35</div>
-            <div class="location">COV<br />Çukurova</div>
+        <!-- Flight Card 3 (Business Dolu) -->
+        <div class="flight-card">
+          <div class="flight-info">
+            <div class="time-location">
+              <div class="time">14:35</div>
+              <div class="location">COV<br />Çukurova</div>
+            </div>
+            <div class="flight-path">
+              <div class="type">Direkt</div>
+              <div class="plane-icon">✈️</div>
+              <div class="duration">Toplam süre: 1s 45d</div>
+            </div>
+            <div class="time-location">
+              <div class="time">16:20</div>
+              <div class="location">IST<br />İstanbul</div>
+            </div>
           </div>
-          <div class="flight-path">
-            <div class="type">Direkt</div>
-            <div class="plane-icon">✈️</div>
-            <div class="duration">Toplam süre: 1s 45d</div>
+          <div class="flight-details">
+            <div class="aircraft">Uçak tipi: Airbus A330-300 – Geniş gövde</div>
           </div>
-          <div class="time-location">
-            <div class="time">16:20</div>
-            <div class="location">IST<br />İstanbul</div>
+          <div class="flight-prices">
+            <div class="price economy">
+              <span>Economy</span>
+              <strong>TRY 3.284<sup>,82</sup></strong>
+              <input type="radio" name="flight" value="flight3" required />
+            </div>
+            <div class="price business full">
+              <span>Business</span>
+              <strong>Dolu</strong>
+            </div>
           </div>
-        </div>
-        <div class="flight-details">
-          <div class="aircraft">Uçak tipi: Airbus A330-300 – Geniş gövde</div>
-        </div>
-        <div class="flight-prices">
-          <div class="price economy">
-            <span>Economy</span>
-            <strong>TRY 3.284<sup>,82</sup></strong>
-            <input type="radio" name="flight3" />
-          </div>
-          <div class="price business full">
-            <span>Business</span>
-            <strong>Dolu</strong>
-          </div>
+          <button
+            type="submit"
+            name="flight"
+            value="flight3"
+            class="card-continue-btn"
+          >
+            Devam Et
+          </button>
         </div>
       </div>
-    </div>
+    </form>
+    <!-- FLIGHT LIST BİTİŞ -->
 
     <footer>
       © 2025 SkyWings Havayolları | <a href="#">Gizlilik</a> |
