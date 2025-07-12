@@ -2178,14 +2178,33 @@ header .step {
   text-align: center;
   margin-top: 2px;
 }
+.about-section.about-story {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.about-section.about-story .about-img-box {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 180px;
+  height: 120px;
+  flex-shrink: 0;
+}
+@media (max-width: 900px) {
+  .about-section.about-story {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+  .about-section.about-story .about-img-box {
+    margin: 0 auto 12px auto;
+  }
+}
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.2s forwards;
-}
-.slide-up {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: slideUp 1.2s forwards;
 }
 @keyframes fadeIn {
   to {
