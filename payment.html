@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyWings | Ödeme</title>
+    <title>SkyWings | Payment</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="booking-steps">
       <div class="logo-area">
-        <div class="logo">✈️ SkyWings</div>
+        <a href="index.html" class="logo">✈️ SkyWings</a>
       </div>
-      <div class="step"><span class="icon">✈️</span> Uçuş seçimi</div>
-      <div class="step"><span class="icon">👤</span> Yolcu bilgileri</div>
-      <div class="step"><span class="icon">🎟️</span> Ek hizmetler</div>
-      <div class="step active"><span class="icon">💳</span> Ödeme</div>
+      <div class="step"><span class="icon">✈️</span> Flight Selection</div>
+      <div class="step"><span class="icon">👤</span> Passenger Information</div>
+      <div class="step"><span class="icon">🎟️</span> Extra Services</div>
+      <div class="step active"><span class="icon">💳</span> Payment</div>
     </header>
     <div class="payment-container">
-      <div class="payment-title">Ödeme Bilgileri</div>
+      <div class="payment-title">Payment Information</div>
       <div class="payment-summary">
-        <span><strong>Uçuş:</strong> Çukurova → İstanbul</span><br />
-        <span><strong>Tarih:</strong> 18 Ağustos</span><br />
-        <span><strong>Yolcu:</strong> 1 Yetişkin</span><br />
-        <span><strong>Tutar:</strong> 3.284,82 TL</span>
+        <span><strong>Flight:</strong> Cukurova → Istanbul</span><br />
+        <span><strong>Date:</strong> August 18</span><br />
+        <span><strong>Passenger:</strong> 1 Adult</span><br />
+        <span><strong>Amount:</strong> € 3,284.82</span>
       </div>
       <form
         class="payment-form"
@@ -30,16 +30,16 @@
         method="get"
         autocomplete="on"
       >
-        <label for="cardname">Kart Üzerindeki İsim</label>
+        <label for="cardname">Name on Card</label>
         <input
           type="text"
           id="cardname"
           name="cardname"
           required
-          placeholder="Ad Soyad"
+          placeholder="Full Name"
         />
 
-        <label for="cardnumber">Kart Numarası</label>
+        <label for="cardnumber">Card Number</label>
         <input
           type="text"
           id="cardnumber"
@@ -52,7 +52,7 @@
 
         <div class="form-row">
           <div>
-            <label for="expdate">Son Kullanma Tarihi</label>
+            <label for="expdate">Expiry Date</label>
             <input
               type="text"
               id="expdate"
@@ -60,7 +60,7 @@
               required
               maxlength="5"
               pattern="(0[1-9]|1[0-2])\/([0-9]{2})"
-              placeholder="AA/YY"
+              placeholder="MM/YY"
             />
           </div>
           <div>
@@ -77,16 +77,18 @@
           </div>
         </div>
 
-        <label for="billmail">Fatura E-posta</label>
+        <label for="billmail">Invoice Email</label>
         <input
           type="email"
           id="billmail"
           name="billmail"
           required
-          placeholder="fatura@mail.com"
+          placeholder="invoice@mail.com"
         />
 
-        <button type="submit" class="card-continue-btn">Ödemeyi Tamamla</button>
+        <button type="submit" class="card-continue-btn">
+          Complete Payment
+        </button>
       </form>
     </div>
   </body>

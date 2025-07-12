@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyWings | Ek Hizmetler</title>
+    <title>SkyWings | Extra Services</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="booking-steps">
       <div class="logo-area">
-        <div class="logo">✈️ SkyWings</div>
+        <a href="index.html" class="logo">✈️ SkyWings</a>
       </div>
-      <div class="step"><span class="icon">✈️</span> Uçuş seçimi</div>
-      <div class="step"><span class="icon">👤</span> Yolcu bilgileri</div>
-      <div class="step active"><span class="icon">🎟️</span> Ek hizmetler</div>
-      <div class="step"><span class="icon">💳</span> Ödeme</div>
+      <div class="step"><span class="icon">✈️</span> Flight Selection</div>
+      <div class="step"><span class="icon">👤</span> Passenger Information</div>
+      <div class="step active"><span class="icon">🎟️</span> Extra Services</div>
+      <div class="step"><span class="icon">💳</span> Payment</div>
     </header>
     <div class="passenger-container">
-      <div class="passenger-title">Ek Hizmetler</div>
+      <div class="passenger-title">Extra Services</div>
       <form class="passenger-form" action="payment.html" method="get">
         <div class="services-list">
           <label class="service-box">
             <input type="checkbox" name="extra_baggage" value="1" />
             <span class="service-icon">💼</span>
-            <span class="service-title">Ekstra Bagaj</span>
-            <span class="service-desc">+20 kg bagaj hakkı</span>
+            <span class="service-title">Extra Baggage</span>
+            <span class="service-desc">+20 kg baggage allowance</span>
           </label>
           <label class="service-box">
             <input type="checkbox" name="seat_select" value="1" />
             <span class="service-icon">🪑</span>
-            <span class="service-title">Koltuk Seçimi</span>
-            <span class="service-desc">İstediğiniz koltukta uçun</span>
+            <span class="service-title">Seat Selection</span>
+            <span class="service-desc">Fly in your preferred seat</span>
           </label>
           <label class="service-box">
             <input type="checkbox" name="meal" value="1" />
             <span class="service-icon">🍽️</span>
-            <span class="service-title">Yemek</span>
-            <span class="service-desc">Sıcak yemek ve içecek</span>
+            <span class="service-title">Meal</span>
+            <span class="service-desc">Hot meal and beverages</span>
           </label>
           <label class="service-box">
             <input type="checkbox" name="insurance" value="1" />
             <span class="service-icon">🛡️</span>
-            <span class="service-title">Seyahat Sigortası</span>
-            <span class="service-desc">Ekstra güvence</span>
+            <span class="service-title">Travel Insurance</span>
+            <span class="service-desc">Extra protection</span>
           </label>
         </div>
-        <button type="submit" class="card-continue-btn">Devam Et</button>
+        <button type="submit" class="card-continue-btn">Continue</button>
       </form>
     </div>
   </body>

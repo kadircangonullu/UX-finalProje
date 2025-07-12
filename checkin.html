@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWings | Check-in</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .seat.available {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .seat.available:hover {
+        background: #667eea;
+        color: white;
+        transform: scale(1.1);
+      }
+
+      .seat.available:focus {
+        background: #667eea;
+        color: white;
+        outline: 2px solid #667eea;
+      }
+
+      .seat.available {
+        outline: none;
+      }
+
+      .seat.available:focus {
+        outline: 2px solid #667eea;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">✈️ SkyWings</div>
+      <nav class="topnav">
+        <a href="book.html">Book Flight</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Help</a>
+        <button class="lang-switch">TR</button>
+        <a href="signin.html" class="nav-btn-auth">Login</a>
+        <a href="register.html" class="nav-btn-auth">Register</a>
+      </nav>
+    </header>
+
+    <div class="checkin-hero">
+      <h1>Online Check-in</h1>
+      <p>
+        Save time at the airport! Complete your check-in online and get your
+        boarding pass. Check-in opens 24 hours before departure.
+      </p>
+    </div>
+
+    <div class="checkin-container">
+      <form class="checkin-form" action="check-success.html" method="get">
+        <div class="form-section">
+          <h3>Passenger Selection</h3>
+          <div class="passenger-list">
+            <label class="passenger-item">
+              <input type="checkbox" name="passengers[]" value="1" checked />
+              <span class="passenger-info">
+                <strong>John Doe</strong><br />
+                <small>Passport: TR12345678</small>
+              </span>
+            </label>
+            <label class="passenger-item">
+              <input type="checkbox" name="passengers[]" value="2" />
+              <span class="passenger-info">
+                <strong>Jane Doe</strong><br />
+                <small>Passport: TR87654321</small>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Seat Selection</h3>
+          <div class="seat-map">
+            <div class="seat-row">
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 1A"
+              >
+                1A
+              </div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 1B"
+              >
+                1B
+              </div>
+              <div class="seat aisle"></div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 1C"
+              >
+                1C
+              </div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 1D"
+              >
+                1D
+              </div>
+            </div>
+            <div class="seat-row">
+              <div class="seat occupied" data-seat="2A">2A</div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 2B"
+              >
+                2B
+              </div>
+              <div class="seat aisle"></div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 2C"
+              >
+                2C
+              </div>
+              <div class="seat occupied" data-seat="2D">2D</div>
+            </div>
+            <div class="seat-row">
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 3A"
+              >
+                3A
+              </div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 3B"
+              >
+                3B
+              </div>
+              <div class="seat aisle"></div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 3C"
+              >
+                3C
+              </div>
+              <div
+                class="seat available"
+                tabindex="0"
+                role="button"
+                aria-label="Seat 3D"
+              >
+                3D
+              </div>
+            </div>
+          </div>
+          <div class="seat-legend">
+            <span class="legend-item"
+              ><div class="seat available"></div>
+              Available</span
+            >
+            <span class="legend-item"
+              ><div class="seat occupied"></div>
+              Occupied</span
+            >
+            <span class="legend-item"
+              ><div class="seat selected"></div>
+              Selected</span
+            >
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Baggage Information</h3>
+          <div class="baggage-info">
+            <div class="baggage-item">
+              <span class="baggage-icon">💼</span>
+              <div>
+                <strong>Checked Baggage</strong><br />
+                <small>1 piece (23 kg) included</small>
+              </div>
+            </div>
+            <div class="baggage-item">
+              <span class="baggage-icon">🎒</span>
+              <div>
+                <strong>Hand Baggage</strong><br />
+                <small>1 piece (8 kg) + 1 personal item</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkin-summary">
+          <h3>Check-in Summary</h3>
+          <div class="summary-details">
+            <p><strong>Flight:</strong> Istanbul (IST) → Paris (CDG)</p>
+            <p><strong>Date:</strong> August 20, 2025</p>
+            <p><strong>Time:</strong> 14:30 - 17:45</p>
+            <p><strong>Passengers:</strong> 2 Adults</p>
+            <p><strong>Seats:</strong> 3A, 3B</p>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="checkin-btn"
+          onclick="window.location.href='check-success.html'"
+        >
+          Complete Check-in
+        </button>
+      </form>
+    </div>
+
+    <div class="checkin-info">
+      <h3>Important Information</h3>
+      <ul>
+        <li>Check-in opens 24 hours before departure</li>
+        <li>You can check-in up to 2 hours before departure</li>
+        <li>Have your passport/ID ready at the airport</li>
+        <li>Arrive at the airport at least 2 hours before departure</li>
+        <li>Download your boarding pass or print it</li>
+      </ul>
+    </div>
+  </body>
+</html>

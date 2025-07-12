@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyWings | Bilet Al</title>
+    <title>SkyWings | Book Flight</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
@@ -19,84 +19,86 @@
       <div class="logo-area">
         <a href="index.html" class="logo">✈️ SkyWings</a>
       </div>
-      <div class="step active"><span class="icon">✈️</span> Uçuş seçimi</div>
-      <div class="step"><span class="icon">👤</span> Yolcu bilgileri</div>
-      <div class="step"><span class="icon">🎟️</span> Ek hizmetler</div>
-      <div class="step"><span class="icon">💳</span> Ödeme</div>
+      <div class="step active">
+        <span class="icon">✈️</span> Flight Selection
+      </div>
+      <div class="step"><span class="icon">👤</span> Passenger Info</div>
+      <div class="step"><span class="icon">🎟️</span> Extra Services</div>
+      <div class="step"><span class="icon">💳</span> Payment</div>
     </header>
 
     <div class="flight-summary">
       <div class="summary-info">
-        <span><strong>Nereden:</strong> Çukurova</span>
-        <span><strong>Nereye:</strong> İstanbul</span>
-        <span><strong>Tarih:</strong> 18 Ağustos</span>
-        <span><strong>Yolcu:</strong> 1 Yolcu (Eco)</span>
+        <span><strong>From:</strong> Cukurova</span>
+        <span><strong>To:</strong> Istanbul</span>
+        <span><strong>Date:</strong> August 18</span>
+        <span><strong>Passenger:</strong> 1 Passenger (Eco)</span>
       </div>
-      <button class="search-again">Yeniden ara</button>
+      <button class="search-again">Search Again</button>
     </div>
 
     <div class="date-selector-wrapper">
       <button class="nav-btn prev">&lt;</button>
-      <!-- SOLDA -->
+      <!-- LEFT -->
 
       <div class="date-list">
         <div class="date-card">
           <strong>09</strong>
-          <span>Cumartesi<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Saturday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
         <div class="date-card">
           <strong>10</strong>
-          <span>Pazar<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Sunday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
         <div class="date-card">
           <strong>11</strong>
-          <span>Pazartesi<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Monday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
         <div class="date-card selected">
           <strong>12</strong>
-          <span>Salı<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Tuesday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
         <div class="date-card">
           <strong>13</strong>
-          <span>Çarşamba<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Wednesday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
         <div class="date-card">
           <strong>14</strong>
-          <span>Perşembe<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Thursday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
         <div class="date-card">
           <strong>15</strong>
-          <span>Cuma<br />Ağustos</span>
-          <div class="price">TRY 3.285</div>
+          <span>Friday<br />August</span>
+          <div class="price">€ 3,285</div>
         </div>
       </div>
 
       <button class="nav-btn next">&gt;</button>
-      <!-- SAĞDA -->
+      <!-- RIGHT -->
     </div>
 
     <section class="filter-sort-bar">
       <div class="filters-left">
         <select>
-          <option>Direkt/Aktarmalı</option>
+          <option>Direct/Connecting</option>
         </select>
         <select>
-          <option>Havayolu firması</option>
+          <option>Airline Company</option>
         </select>
       </div>
 
       <div class="sort-right">
-        <span class="sort-label">Sıralama kriteri</span>
+        <span class="sort-label">Sorting Criteria</span>
         <div class="sort-buttons">
-          <button class="active">Önerilen</button>
-          <button>Ücrete göre artan</button>
-          <button>Uçuş süresi</button>
+          <button class="active">Recommended</button>
+          <button>Price Ascending</button>
+          <button>Flight Duration</button>
           <select class="extra-sorting">
             <option>+3</option>
           </select>
@@ -107,17 +109,16 @@
     <section class="info-box">
       <div class="info-icon">🕘</div>
       <p>
-        İnternet sitemizden veya mobil uygulamamızdan satın aldığınız biletler
-        için <strong>24 saat içinde kesintisiz iade</strong> alabilirsiniz.
-        Kesintisiz iade alabilmeniz için uçuşlarınızın kalkış tarihine en az
-        <strong>7 gün</strong> olması gerekmektedir. Satın aldığınız ek
-        hizmetler iade edilmemektedir. Detaylı bilgi için
-        <a href="#">24 saat içinde ücretsiz bilet iptali</a> sayfamızı ziyaret
-        edebilirsiniz.
+        For tickets purchased from our website or mobile app, you can get
+        <strong>uninterrupted refund within 24 hours</strong>. For uninterrupted
+        refund, your flights must be at least <strong>7 days</strong> from the
+        departure date. Additional services purchased are not refundable. For
+        detailed information, please visit our
+        <a href="#">24-hour free ticket cancellation</a> page.
       </p>
     </section>
 
-    <!-- FLIGHT LIST BAŞLANGIÇ -->
+    <!-- FLIGHT LIST START -->
     <form action="passenger.html" method="get">
       <div class="flight-list">
         <!-- Flight Card 1 -->
@@ -125,30 +126,32 @@
           <div class="flight-info">
             <div class="time-location">
               <div class="time">02:20</div>
-              <div class="location">COV<br />Çukurova</div>
+              <div class="location">COV<br />Cukurova</div>
             </div>
             <div class="flight-path">
-              <div class="type">Direkt</div>
+              <div class="type">Direct</div>
               <div class="plane-icon">✈️</div>
-              <div class="duration">Toplam süre: 1s 50d</div>
+              <div class="duration">Total duration: 1h 50m</div>
             </div>
             <div class="time-location">
               <div class="time">04:10</div>
-              <div class="location">IST<br />İstanbul</div>
+              <div class="location">IST<br />Istanbul</div>
             </div>
           </div>
           <div class="flight-details">
-            <div class="aircraft">Uçak tipi: Airbus A321-231 – Dar gövde</div>
+            <div class="aircraft">
+              Aircraft type: Airbus A321-231 – Narrow body
+            </div>
           </div>
           <div class="flight-prices">
             <div class="price economy">
               <span>Economy</span>
-              <strong>TRY 3.284<sup>,82</sup></strong>
+              <strong>€ 3.284<sup>,82</sup></strong>
               <input type="radio" name="flight" value="flight1" required />
             </div>
             <div class="price business">
               <span>Business</span>
-              <strong>TRY 10.205<sup>,13</sup></strong>
+              <strong>€ 10.205<sup>,13</sup></strong>
               <input type="radio" name="flight" value="flight1-business" />
             </div>
           </div>
@@ -158,7 +161,7 @@
             value="flight1"
             class="card-continue-btn"
           >
-            Devam Et
+            Continue
           </button>
         </div>
 
@@ -167,30 +170,32 @@
           <div class="flight-info">
             <div class="time-location">
               <div class="time">08:35</div>
-              <div class="location">COV<br />Çukurova</div>
+              <div class="location">COV<br />Cukurova</div>
             </div>
             <div class="flight-path">
-              <div class="type">Direkt</div>
+              <div class="type">Direct</div>
               <div class="plane-icon">✈️</div>
-              <div class="duration">Toplam süre: 1s 50d</div>
+              <div class="duration">Total duration: 1h 50m</div>
             </div>
             <div class="time-location">
               <div class="time">10:25</div>
-              <div class="location">IST<br />İstanbul</div>
+              <div class="location">IST<br />Istanbul</div>
             </div>
           </div>
           <div class="flight-details">
-            <div class="aircraft">Uçak tipi: Boeing B737-800 – Dar gövde</div>
+            <div class="aircraft">
+              Aircraft type: Boeing B737-800 – Narrow body
+            </div>
           </div>
           <div class="flight-prices">
             <div class="price economy">
               <span>Economy</span>
-              <strong>TRY 3.284<sup>,82</sup></strong>
+              <strong>€ 3.284<sup>,82</sup></strong>
               <input type="radio" name="flight" value="flight2" required />
             </div>
             <div class="price business">
               <span>Business</span>
-              <strong>TRY 10.205<sup>,13</sup></strong>
+              <strong>€ 10.205<sup>,13</sup></strong>
               <input type="radio" name="flight" value="flight2-business" />
             </div>
           </div>
@@ -200,39 +205,41 @@
             value="flight2"
             class="card-continue-btn"
           >
-            Devam Et
+            Continue
           </button>
         </div>
 
-        <!-- Flight Card 3 (Business Dolu) -->
+        <!-- Flight Card 3 (Business Full) -->
         <div class="flight-card">
           <div class="flight-info">
             <div class="time-location">
               <div class="time">14:35</div>
-              <div class="location">COV<br />Çukurova</div>
+              <div class="location">COV<br />Cukurova</div>
             </div>
             <div class="flight-path">
-              <div class="type">Direkt</div>
+              <div class="type">Direct</div>
               <div class="plane-icon">✈️</div>
-              <div class="duration">Toplam süre: 1s 45d</div>
+              <div class="duration">Total duration: 1h 45m</div>
             </div>
             <div class="time-location">
               <div class="time">16:20</div>
-              <div class="location">IST<br />İstanbul</div>
+              <div class="location">IST<br />Istanbul</div>
             </div>
           </div>
           <div class="flight-details">
-            <div class="aircraft">Uçak tipi: Airbus A330-300 – Geniş gövde</div>
+            <div class="aircraft">
+              Aircraft type: Airbus A330-300 – Wide body
+            </div>
           </div>
           <div class="flight-prices">
             <div class="price economy">
               <span>Economy</span>
-              <strong>TRY 3.284<sup>,82</sup></strong>
+              <strong>€ 3.284<sup>,82</sup></strong>
               <input type="radio" name="flight" value="flight3" required />
             </div>
             <div class="price business full">
               <span>Business</span>
-              <strong>Dolu</strong>
+              <strong>Full</strong>
             </div>
           </div>
           <button
@@ -241,16 +248,16 @@
             value="flight3"
             class="card-continue-btn"
           >
-            Devam Et
+            Continue
           </button>
         </div>
       </div>
     </form>
-    <!-- FLIGHT LIST BİTİŞ -->
+    <!-- FLIGHT LIST END -->
 
     <footer>
-      © 2025 SkyWings Havayolları | <a href="#">Gizlilik</a> |
-      <a href="#">İletişim</a>
+      © 2025 SkyWings Airlines | <a href="#">Privacy</a> |
+      <a href="#">Contact</a>
     </footer>
   </body>
 </html>

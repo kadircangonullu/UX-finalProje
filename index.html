@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyWings | Ana Sayfa</title>
+    <title>SkyWings | Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,41 +17,47 @@
     <header class="topbar">
       <div class="logo">✈️ SkyWings</div>
       <nav class="topnav">
-        <a href="book.html">Bilet Al</a>
-        <a href="destinations.html">Uçuş Noktaları</a>
-        <a href="about.html">Hakkımızda</a>
-        <a href="contact.html">Yardım</a>
-        <button class="lang-switch">EN</button>
+        <a href="book.html">Book Flight</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Help</a>
+        <button class="lang-switch">TR</button>
+        <a href="signin.html" class="nav-btn-auth">Login</a>
+        <a href="register.html" class="nav-btn-auth">Register</a>
       </nav>
     </header>
 
     <section class="hero">
       <div class="search-box">
-        <h2>Merhaba, <br /><span>Nereyi keşfetmek istersiniz?</span></h2>
+        <h2>Hello, <br /><span>Where would you like to explore?</span></h2>
 
         <div class="tab-menu">
-          <label class="tab active">Uçak Bileti</label>
-          <label class="tab">Uçak + Otel</label>
-          <label class="tab">Check-in</label>
-          <label class="tab">Uçuş Durumu</label>
+          <label class="tab active">Flight Ticket</label>
+          <label class="tab">Flight + Hotel</label>
+          <label
+            class="tab"
+            onclick="window.location.href='checkin-search.html'"
+            >Check-in</label
+          >
+          <label class="tab" onclick="window.location.href='flight-status.html'"
+            >Flight Status</label
+          >
         </div>
 
         <form class="flight-form">
           <div class="trip-types">
-            <label
-              ><input type="radio" name="trip" checked /> Gidiş - Dönüş</label
-            >
-            <label><input type="radio" name="trip" /> Tek Yön</label>
-            <label><input type="radio" name="trip" /> Çoklu Uçuş</label>
+            <label><input type="radio" name="trip" checked /> Round Trip</label>
+            <label><input type="radio" name="trip" /> One Way</label>
+            <label><input type="radio" name="trip" /> Multi-City</label>
           </div>
 
           <div class="form-grid">
-            <input type="text" placeholder="Nereden" />
-            <input type="text" placeholder="Nereye" />
+            <input type="text" placeholder="From" />
+            <input type="text" placeholder="To" />
             <input type="date" />
             <div class="passenger-box">
               <button class="passenger-toggle">
-                1 Yolcu • Economy Class ▼
+                1 Passenger • Economy Class ▼
               </button>
               <div class="passenger-panel">
                 <div class="class-tabs">
@@ -60,7 +66,7 @@
                 </div>
                 <div class="passenger-row">
                   <div class="passenger-label">
-                    <strong>Yetişkin</strong><br /><small>12 +</small>
+                    <strong>Adult</strong><br /><small>12 +</small>
                   </div>
                   <div class="counter">
                     <button>-</button>
@@ -70,7 +76,7 @@
                 </div>
                 <div class="passenger-row">
                   <div class="passenger-label">
-                    <strong>Çocuk</strong><br /><small>2 – 12</small>
+                    <strong>Child</strong><br /><small>2 – 12</small>
                   </div>
                   <div class="counter">
                     <button>-</button>
@@ -80,7 +86,7 @@
                 </div>
                 <div class="passenger-row">
                   <div class="passenger-label">
-                    <strong>Bebek</strong><br /><small>2 yaş altı</small>
+                    <strong>Infant</strong><br /><small>Under 2</small>
                   </div>
                   <div class="counter">
                     <button>-</button>
@@ -90,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <button type="submit">Uçuş Ara</button>
+            <button type="submit">Search Flights</button>
           </div>
         </form>
       </div>
@@ -99,44 +105,44 @@
     <section class="icons-menu">
       <div class="icon-box">
         <div class="icon-circle">🪑</div>
-        <h4>Koltuk seçimi</h4>
+        <h4>Seat Selection</h4>
       </div>
       <div class="icon-box">
         <div class="icon-circle">💼</div>
-        <h4>Ekstra bagaj</h4>
+        <h4>Extra Baggage</h4>
       </div>
       <div class="icon-box">
         <div class="icon-circle">🏨</div>
-        <h4>Otel rezervasyonu</h4>
+        <h4>Hotel Reservation</h4>
       </div>
       <div class="icon-box">
         <div class="icon-circle">🚗</div>
-        <h4>Araç kiralama</h4>
+        <h4>Car Rental</h4>
       </div>
       <div class="icon-box">
         <div class="icon-circle">🛡️</div>
-        <h4>Seyahat sigortası</h4>
+        <h4>Travel Insurance</h4>
       </div>
       <div class="icon-box">
         <div class="icon-circle">🎁</div>
-        <h4>Hediye Kart</h4>
+        <h4>Gift Card</h4>
       </div>
     </section>
 
     <section class="flights-section">
-      <h3>Popüler Rotalar</h3>
+      <h3>Popular Routes</h3>
       <div class="flight-cards">
         <div class="flight-card">
-          <h4>İstanbul → Paris</h4>
-          <p>Günlük uçuşlar | Direkt</p>
+          <h4>Istanbul → Paris</h4>
+          <p>Daily flights | Direct</p>
         </div>
         <div class="flight-card">
-          <h4>Ankara → Londra</h4>
-          <p>Haftada 4 sefer | Aktarmalı</p>
+          <h4>Ankara → London</h4>
+          <p>4 flights per week | Connecting</p>
         </div>
         <div class="flight-card">
-          <h4>İzmir → Berlin</h4>
-          <p>Yüksek talep | Uygun fiyat</p>
+          <h4>Izmir → Berlin</h4>
+          <p>High demand | Best prices</p>
         </div>
       </div>
     </section>
@@ -145,13 +151,13 @@
       <div class="alert-content">
         <div class="alert-icon">⚠️</div>
         <div class="alert-text">
-          <h4>Önemli Duyuru</h4>
+          <h4>Important Announcement</h4>
           <p>
-            13 Haziran - 31 Temmuz 2025 tarihleri arasında İran, Irak, Suriye,
-            Ürdün ve Lübnan uçuşları için
-            <strong>ücretsiz iade ve tarih değişikliği</strong> hakkı
-            tanınmıştır. Detaylı bilgi için
-            <a href="#">duyurular sayfasını</a> ziyaret edebilirsiniz.
+            For flights to Iran, Iraq, Syria, Jordan and Lebanon between June 13
+            - July 31, 2025,
+            <strong>free refund and date change</strong> rights have been
+            granted. For detailed information, please visit our
+            <a href="#">announcements page</a>.
           </p>
         </div>
         <span class="close-icon">✖️</span>
@@ -159,57 +165,57 @@
     </section>
 
     <section class="opportunities">
-      <h2>Uçuş Fırsatları</h2>
+      <h2>Flight Opportunities</h2>
       <div class="filters">
         <select>
-          <option>Rota seç</option>
+          <option>Select Route</option>
         </select>
         <select>
-          <option>Kalkış tarihi</option>
+          <option>Departure Date</option>
         </select>
-        <button class="tag active">Popüler rotalar</button>
-        <button class="tag">Gidiş-Dönüş</button>
+        <button class="tag active">Popular Routes</button>
+        <button class="tag">Round Trip</button>
         <button class="tag">Economy</button>
-        <button class="tag clear">Temizle</button>
+        <button class="tag clear">Clear</button>
       </div>
 
       <div class="flight-cards">
         <div class="flight-card">
           <img src="images/antalya.jpg" alt="Antalya" />
           <div class="card-content">
-            <h4>İstanbul (IST) - Antalya (AYT)</h4>
-            <p>18 Temmuz Cum - 21 Temmuz Pzt</p>
-            <div class="price">TRY 3,970*</div>
-            <p class="info">Gidiş-Dönüş, Economy</p>
-            <button>BİLET AL</button>
+            <h4>Istanbul (IST) - Antalya (AYT)</h4>
+            <p>July 18 Fri - July 21 Mon</p>
+            <div class="price">€ 3,970*</div>
+            <p class="info">Round Trip, Economy</p>
+            <button>BOOK NOW</button>
           </div>
         </div>
 
         <div class="flight-card">
           <img src="images/Bodrum.webp" alt="Bodrum" />
           <div class="card-content">
-            <h4>İstanbul (IST) - Muğla-Bodrum (BJV)</h4>
-            <p>15 Temmuz Sal - 18 Temmuz Cum</p>
-            <div class="price">TRY 3,970*</div>
-            <p class="info">Gidiş-Dönüş, Economy</p>
-            <button>BİLET AL</button>
+            <h4>Istanbul (IST) - Mugla-Bodrum (BJV)</h4>
+            <p>July 15 Tue - July 18 Fri</p>
+            <div class="price">€ 3,970*</div>
+            <p class="info">Round Trip, Economy</p>
+            <button>BOOK NOW</button>
           </div>
         </div>
 
         <div class="flight-card">
-          <img src="images/izmir.jpg" alt="İzmir" />
+          <img src="images/izmir.jpg" alt="Izmir" />
           <div class="card-content">
-            <h4>İstanbul (IST) - İzmir (ADB)</h4>
-            <p>21 Temmuz Pzt - 26 Temmuz Cmt</p>
-            <div class="price">TRY 3,721*</div>
-            <p class="info">Gidiş-Dönüş, Economy</p>
-            <button>BİLET AL</button>
+            <h4>Istanbul (IST) - Izmir (ADB)</h4>
+            <p>July 21 Mon - July 26 Sat</p>
+            <div class="price">€ 3,721*</div>
+            <p class="info">Round Trip, Economy</p>
+            <button>BOOK NOW</button>
           </div>
         </div>
       </div>
 
       <div class="more-btn">
-        <button>Daha Fazlasını Gör</button>
+        <button>View More</button>
       </div>
     </section>
 
@@ -217,22 +223,22 @@
       <div class="promo-box">
         <img src="images/270x150_sudan.webp" alt="Sudan" />
         <p>
-          <strong>Port Sudan uçuşlarımız başlıyor!</strong><br />30 Eylül’e
-          kadar biletinizi alın.
+          <strong>Our Port Sudan flights are starting!</strong><br />Book your
+          ticket until September 30.
         </p>
       </div>
       <div class="promo-box">
-        <img src="images/270x150_3lu_USKxOHRxPRST_yeni.webp" alt="Balkanlar" />
+        <img src="images/270x150_3lu_USKxOHRxPRST_yeni.webp" alt="Balkans" />
         <p>
-          <strong>Tek rota: Balkanlar sizi bekliyor!</strong><br />15 Temmuz’a
-          kadar avantajlı fiyatlar.
+          <strong>Single route: Balkans are waiting for you!</strong
+          ><br />Advantageous prices until July 15.
         </p>
       </div>
       <div class="promo-box">
-        <img src="images/ucak_kapak.jpg" alt="Kuveyt Türk" />
+        <img src="images/ucak_kapak.jpg" alt="Kuwait Turk" />
         <p>
-          <strong>Kuveyt Türk’e özel 2.000 TL hediye!</strong><br />Yeni müşteri
-          olun, indirim kazanın!
+          <strong>Special 2,000 TL gift for Kuwait Turk!</strong><br />Become a
+          new customer, get a discount!
         </p>
       </div>
     </section>
@@ -240,36 +246,36 @@
     <section class="promo-section awards-bar">
       <div class="award-item">
         <img src="images/wold-record.webp" alt="Record Holder" />
-        <p>DÜNYANIN EN ÇOK ÜLKESİNE UÇAN HAVAYOLU</p>
+        <p>WORLD'S AIRLINE FLYING TO THE MOST COUNTRIES</p>
       </div>
       <div class="award-item">
         <img src="images/worldclass_logo-01.webp" alt="World Class" />
-        <p>WORLDCLASS 2024 – KÜRESEL HAVAYOLU LİDERİ</p>
+        <p>WORLDCLASS 2024 – GLOBAL AIRLINE LEADER</p>
       </div>
       <div class="award-item">
         <img src="images/apex-fivestar-footer.webp" alt="5 Stars" />
-        <p>BEŞ YILDIZLI KÜRESEL HAVA YOLU</p>
+        <p>FIVE-STAR GLOBAL AIRLINE</p>
       </div>
       <div class="award-item">
         <img src="images/SKY_logo__-01.webp" alt="Skytrax" />
-        <p>AVRUPA’NIN EN İYİ HAVA YOLU</p>
+        <p>EUROPE'S BEST AIRLINE</p>
       </div>
       <div class="award-item">
         <img src="images/SKY_logo__-01.webp" alt="Business" />
-        <p>EN İYİ BUSINESS CLASS İKRAM HİZMETİ</p>
+        <p>BEST BUSINESS CLASS CATERING SERVICE</p>
       </div>
       <div class="award-item">
         <img
           src="images/80x80_apex-best-entertainment-europe.webp"
           alt="Entertainment"
         />
-        <p>AVRUPA’NIN EN İYİ UÇAK İÇİ EĞLENCE ÖDÜLÜ</p>
+        <p>EUROPE'S BEST IN-FLIGHT ENTERTAINMENT AWARD</p>
       </div>
     </section>
 
     <footer>
-      © 2025 SkyWings Havayolları | <a href="#">Gizlilik</a> |
-      <a href="#">İletişim</a>
+      © 2025 SkyWings Airlines | <a href="#">Privacy</a> |
+      <a href="#">Contact</a>
     </footer>
   </body>
 </html>

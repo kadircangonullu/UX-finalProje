@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyWings | Uçuş Noktaları</title>
+    <title>SkyWings | Destinations</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="topbar">
       <a href="index.html" class="logo">✈️ SkyWings</a>
       <nav class="topnav">
-        <a href="book.html">Bilet Al</a>
-        <a href="destinations.html">Uçuş Noktaları</a>
-        <a href="about.html">Hakkımızda</a>
-        <a href="contact.html">Yardım</a>
-        <button class="lang-switch">EN</button>
+        <a href="book.html">Book Flight</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Help</a>
+        <button class="lang-switch">TR</button>
+        <a href="signin.html" class="nav-btn-auth">Login</a>
+        <a href="register.html" class="nav-btn-auth">Register</a>
       </nav>
     </header>
     <div class="destinations-hero">
-      <h1>Uçuş Noktaları</h1>
+      <h1>Destinations</h1>
       <p>
-        SkyWings ile dünyanın dört bir yanına güvenli ve konforlu uçuşlar!
-        Popüler şehirleri keşfet, yeni rotalarla seyahatini planla.
+        Safe and comfortable flights around the world with SkyWings! Explore
+        popular cities, plan your trip with new routes.
       </p>
       <form class="dest-search-bar">
-        <input type="text" placeholder="Şehir, ülke veya havaalanı ara..." />
+        <input type="text" placeholder="Search city, country or airport..." />
         <select>
-          <option>Ülke seç</option>
-          <option>Türkiye</option>
-          <option>Fransa</option>
-          <option>Almanya</option>
-          <option>İngiltere</option>
-          <option>ABD</option>
-          <option>Rusya</option>
+          <option>Select Country</option>
+          <option>Turkey</option>
+          <option>France</option>
+          <option>Germany</option>
+          <option>England</option>
+          <option>USA</option>
+          <option>Russia</option>
         </select>
         <select>
-          <option>Popülerlik</option>
-          <option>En popüler</option>
-          <option>Yeni rota</option>
-          <option>Direkt uçuş</option>
+          <option>Popularity</option>
+          <option>Most Popular</option>
+          <option>New Route</option>
+          <option>Direct Flight</option>
         </select>
-        <button type="submit">Ara</button>
+        <button type="submit">Search</button>
       </form>
     </div>
     <div class="destinations-list">
@@ -50,27 +52,27 @@
           <div class="dest-header">
             <span class="dest-flag">🇫🇷</span>
             <h3>Paris</h3>
-            <span class="dest-label">Popüler</span>
+            <span class="dest-label">Popular</span>
           </div>
           <p>
-            Romantizmin başkenti, Eyfel Kulesi ve sanat dolu sokaklar. Her
-            mevsim büyüleyici!
+            The capital of romance, Eiffel Tower and art-filled streets.
+            Enchanting in every season!
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card">
-        <img src="images/london.webp" alt="Londra" />
+        <img src="images/london.webp" alt="London" />
         <div class="dest-content">
           <div class="dest-header">
             <span class="dest-flag">🇬🇧</span>
-            <h3>Londra</h3>
+            <h3>London</h3>
           </div>
           <p>
-            Tarihi ve modernliği bir arada sunan şehir. Thames Nehri, Big Ben ve
-            daha fazlası.
+            A city that combines history and modernity. Thames River, Big Ben
+            and much more.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card">
@@ -81,10 +83,10 @@
             <h3>Berlin</h3>
           </div>
           <p>
-            Sanat, tarih ve gece hayatı ile ünlü. Berlin Duvarı ve müzeler
-            şehri.
+            Famous for art, history and nightlife. The city of Berlin Wall and
+            museums.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card new">
@@ -93,13 +95,13 @@
           <div class="dest-header">
             <span class="dest-flag">🇯🇵</span>
             <h3>Tokyo</h3>
-            <span class="dest-label new">Yeni Rota</span>
+            <span class="dest-label new">New Route</span>
           </div>
           <p>
-            Teknoloji ve geleneklerin buluştuğu şehir. Tapınaklar, gökdelenler
-            ve eşsiz mutfak.
+            A city where technology meets traditions. Temples, skyscrapers and
+            unique cuisine.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card">
@@ -110,24 +112,25 @@
             <h3>New York</h3>
           </div>
           <p>
-            Özgürlükler şehri. Central Park, Times Square ve gökdelenler diyarı.
+            The city of freedoms. Central Park, Times Square and the land of
+            skyscrapers.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card">
-        <img src="images/İstanbul.webp" alt="İstanbul" />
+        <img src="images/İstanbul.webp" alt="Istanbul" />
         <div class="dest-content">
           <div class="dest-header">
             <span class="dest-flag">🇹🇷</span>
-            <h3>İstanbul</h3>
-            <span class="dest-label">Popüler</span>
+            <h3>Istanbul</h3>
+            <span class="dest-label">Popular</span>
           </div>
           <p>
-            İki kıtanın buluştuğu şehir. Tarih, kültür ve lezzet dolu bir
-            yolculuk.
+            The city where two continents meet. A journey full of history,
+            culture and taste.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card">
@@ -138,27 +141,27 @@
             <h3>Dubai</h3>
           </div>
           <p>
-            Lüks, alışveriş ve gökdelenler şehri. Çöl safarisi ve deniz keyfi
-            bir arada.
+            The city of luxury, shopping and skyscrapers. Desert safari and sea
+            pleasure combined.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
       <div class="destination-card">
-        <img src="images/baku.jpg" alt="Bakü" />
+        <img src="images/baku.jpg" alt="Baku" />
         <div class="dest-content">
           <div class="dest-header">
             <span class="dest-flag">🇦🇿</span>
-            <h3>Bakü</h3>
+            <h3>Baku</h3>
           </div>
           <p>
-            Hazar kıyısında modern ve tarihi dokunun birleşimi. Alev Kuleleri ve
-            eski şehir.
+            The combination of modern and historical touch on the Caspian coast.
+            Flame Towers and old city.
           </p>
-          <button class="dest-btn">Uçuş Ara</button>
+          <button class="dest-btn">Search Flights</button>
         </div>
       </div>
-      <!-- Daha fazla destinasyon kartı eklenebilir -->
+      <!-- More destination cards can be added -->
     </div>
   </body>
 </html>

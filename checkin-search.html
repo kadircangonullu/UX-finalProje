@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWings | Check-in Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">✈️ SkyWings</div>
+      <nav class="topnav">
+        <a href="book.html">Book Flight</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Help</a>
+        <button class="lang-switch">TR</button>
+        <a href="signin.html" class="nav-btn-auth">Login</a>
+        <a href="register.html" class="nav-btn-auth">Register</a>
+      </nav>
+    </header>
+
+    <div class="checkin-hero">
+      <h1>Online Check-in</h1>
+      <p>
+        Save time at the airport! Complete your check-in online and get your
+        boarding pass. Check-in opens 24 hours before departure.
+      </p>
+    </div>
+
+    <div class="checkin-search-container">
+      <div class="search-form">
+        <h2>Find Your Flight</h2>
+        <p>Enter your booking details to find your flight and start check-in</p>
+
+        <form class="checkin-search-form" action="checkin.html" method="get">
+          <div class="form-row">
+            <div>
+              <label for="booking-ref">Booking Reference</label>
+              <input
+                type="text"
+                id="booking-ref"
+                name="booking_ref"
+                required
+                placeholder="e.g., ABC123456"
+                maxlength="10"
+              />
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last_name"
+                required
+                placeholder="Your last name"
+              />
+            </div>
+          </div>
+
+          <div class="search-info">
+            <div class="info-box">
+              <span class="info-icon">ℹ️</span>
+              <div>
+                <strong>Where to find your booking reference?</strong><br />
+                <small
+                  >Check your confirmation email or booking confirmation
+                  page</small
+                >
+              </div>
+            </div>
+            <div class="info-box">
+              <span class="info-icon">⏰</span>
+              <div>
+                <strong>Check-in Times</strong><br />
+                <small
+                  >Opens 24 hours before departure, closes 2 hours before</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="search-flight-btn">Search Flight</button>
+        </form>
+      </div>
+
+      <div class="checkin-benefits">
+        <h3>Why Check-in Online?</h3>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <span class="benefit-icon">⏱️</span>
+            <h4>Save Time</h4>
+            <p>Skip the queue at the airport and go straight to security</p>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🪑</span>
+            <h4>Choose Your Seat</h4>
+            <p>Select your preferred seat before boarding</p>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">📱</span>
+            <h4>Digital Boarding Pass</h4>
+            <p>Get your boarding pass on your phone or print it</p>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🎒</span>
+            <h4>Baggage Info</h4>
+            <p>Check your baggage allowance and restrictions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkin-info">
+      <h3>Important Information</h3>
+      <ul>
+        <li>Check-in opens 24 hours before departure</li>
+        <li>You can check-in up to 2 hours before departure</li>
+        <li>Have your passport/ID ready at the airport</li>
+        <li>Arrive at the airport at least 2 hours before departure</li>
+        <li>Download your boarding pass or print it</li>
+        <li>For international flights, ensure your documents are valid</li>
+      </ul>
+    </div>
+  </body>
+</html>
