@@ -1,71 +1,62 @@
-# UX Final Project – Car Price Prediction Platform
+# UX Final Project – Airline Booking Website
 
-## 📝 Project Overview
+## ✈️ Project Overview
 
-This project presents a web-based application for second-hand car price prediction, integrating user experience (UX) principles with machine learning. The platform allows users to enter vehicle details and receive accurate price estimations, along with recommendations for similar cars. The system is designed to be accessible, visually modern, and user-friendly.
+This project is a responsive, user-centered airline booking website prototype developed as part of final project for the User Experience course. The goal was to create a visually appealing and intuitive experience for users booking flights online, focusing on usability, accessibility, and design consistency.
 
-## 🚀 Features
+## 🎯 Key Features
 
-- 🔍 **Price Prediction**: Instant estimation based on car specifications.
-- 🧠 **Machine Learning Models**: Uses trained regression models (XGBoost, Gradient Boosting, etc.).
-- 🧾 **Similar Cars Suggestion**: Recommends cars within the estimated price range.
-- 🌗 **Dark Mode**: User interface supports light/dark themes.
-- 🌐 **Multilingual Support**: Interface available in multiple languages.
-- 🖼️ **Enhanced UI**: Uses visual components like cards, forms, and styled navigation for better engagement.
+- 🧾 **Flight Booking Form**: Allows users to search and book flights with departure, destination, and date selection.
+- 📅 **Check-In Functionality**: Supports online check-in via search with booking reference and surname.
+- ✅ **Booking Confirmation Pages**: Dedicated success and confirmation pages enhance user feedback.
+- 🔐 **Authentication Pages**: Includes styled sign-in and registration forms (`signin.html`, `register.html`).
+- 🧭 **Flight Status Search**: Enables tracking of flight status with user inputs.
+- 📍 **Destinations & Services**: Dedicated pages for promotions, destinations, and additional services.
 
-## 🛠️ Technologies Used
+## 🖼️ Interface Pages
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Flask)
-- **Machine Learning**: scikit-learn, XGBoost, pandas, numpy
-- **Deployment**: Flask local server (or compatible hosting)
-- **Data Visualization**: Matplotlib, Seaborn
+- `index.html` – Homepage with flight search form
+- `book.html` – Booking page
+- `checkin.html` – Online check-in page
+- `checkin-search.html` – Check-in search form
+- `flight-status.html` – Flight status lookup
+- `payment.html` – Payment form
+- `success.html` & `check-success.html` – Success/confirmation messages
+- `register.html`, `signin.html` – User authentication
+- `add-services.html` – Additional services (extras)
+- `about.html`, `contact.html`, `destinations.html` – Informational pages
 
-## 📦 Installation & Running
+## 🎨 Design & UX Goals
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/project-repo-name.git
-   cd project-repo-name
-   ```
+- Clean and modern layout with consistent color palette
+- Fully responsive design using CSS Flexbox and media queries
+- Emphasis on readability and accessibility
+- Visual feedback for interactions (e.g., buttons, form validation)
 
-2. **Set up Python environment**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🧰 Technologies Used
 
-3. **Run the Flask app**:
-   ```bash
-   python app.py
-   ```
+- **HTML5** – Semantic and structured markup
+- **CSS3** – Custom styling (`style.css`, `auth.css`)
+- **Images** – Custom UI visuals in `images/` folder
+- **No JS/Backend** – This is a frontend-only prototype
 
-4. **Open your browser**:
-   ```
-   http://127.0.0.1:5000/
-   ```
-
-## 🧠 Machine Learning Details
-
-- Models trained on structured car data using regression techniques.
-- Feature engineering includes brand, model, year, mileage, fuel type, gear type, etc.
-- XGBoost and Gradient Boosting were found to perform best in predicting non-linear price patterns.
-
-## 📁 Project Structure
-
-```
-├── static/               # CSS, JS, images
-├── templates/            # HTML files
-├── models/               # Trained ML models
-├── app.py                # Flask backend
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
-```
+## 📁 Folder Structure
+├── images/ # Image assets
+├── style.css # Main stylesheet
+├── auth.css # Authentication-specific CSS
+├── index.html # Homepage
+├── book.html # Flight booking
+├── checkin.html # Check-in process
+├── flight-status.html # Flight status search
+├── payment.html # Payment screen
+├── success.html # Booking confirmation
+├── signin.html # Login page
+├── register.html # Signup page
+├── ... and more
 
 ## 👥 Contributors
 
-- [Your Name] – UX Design, Frontend Developer
-- [Teammate 1] – Backend Developer
-- [Teammate 2] – ML Engineer
+- Kadir Can Gönüllü – UX Design, Frontend Developer
 
 ## 📌 License
 
